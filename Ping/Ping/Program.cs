@@ -12,7 +12,7 @@ using Quartz;
 using Topshelf;
 using Topshelf.Quartz;
 
-namespace Netalytics.PingHost.Ping
+namespace SpearSoft.PingHost.Ping
 {
     class Program
     {
@@ -21,10 +21,10 @@ namespace Netalytics.PingHost.Ping
             ConfigureLogger();
 
             var serviceDisplayName =
-                ConfigurationManager.AppSettings["ServiceDisplayName"] ?? "Netalytics.PingHost.Ping";
+                ConfigurationManager.AppSettings["ServiceDisplayName"] ?? "SpearSoft.PingHost.Ping";
             var serviceDescription = ConfigurationManager.AppSettings["ServiceDescription"] ??
                                      "Ping service for keeping SignalR connections to the HIE alive";
-            var serviceName = ConfigurationManager.AppSettings["ServiceName"] ?? "Netalytics_PingHost_Ping";
+            var serviceName = ConfigurationManager.AppSettings["ServiceName"] ?? "SpearSoft_PingHost_Ping";
             var pollingInterval = ConfigurationManager.AppSettings["PollingInterval"] ?? "900";
 
             HostFactory.Run(x =>

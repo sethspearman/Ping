@@ -6,22 +6,22 @@ using System.Net.Http.Headers;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using Netalytics.PingHost.Ping;
+using SpearSoft.PingHost.Ping;
 using Quartz;
 using Topshelf.Logging;
 
-namespace Netalytics.PingHost.Ping
+namespace SpearSoft.PingHost.Ping
 {
     class ServiceHost : IDisposable
     {
-        public string LogSource { get; } = ConfigurationManager.AppSettings["LogSource"] ?? "Netalytics.PingHost.Ping";
+        public string LogSource { get; } = ConfigurationManager.AppSettings["LogSource"] ?? "SpearSoft.PingHost.Ping";
         public LogWriter Log { get; } = HostLogger.Get<ServiceHost>();
 
         private static HttpClient _httpClient;
         private static HttpClientHandler _httpClientHandler;
 
         private const string MediaTypeJson = "application/json";
-        private const string ClientUserAgent = "netalytics-pinghost-ping-service";
+        private const string ClientUserAgent = "spearsoft-pinghost-ping-service";
 
         public string WriteToFile { get; } = ConfigurationManager.AppSettings["WriteToFile"] ?? "false";
 

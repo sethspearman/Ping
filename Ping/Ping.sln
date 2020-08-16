@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Netalytics.PingHost.Ping", "Ping\Netalytics.PingHost.Ping.csproj", "{12F11A38-371B-420F-BF7D-85C4487105F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpearSoft.PingHost.Ping", "Ping\SpearSoft.PingHost.Ping.csproj", "{12F11A38-371B-420F-BF7D-85C4487105F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

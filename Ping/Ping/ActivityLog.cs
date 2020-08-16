@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Topshelf.Logging;
 
-namespace Netalytics.PingHost.Ping.Utilities
+namespace SpearSoft.PingHost.Ping.Utilities
 {
     public static class ActivityLog
     {
