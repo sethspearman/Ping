@@ -23,7 +23,7 @@ namespace SpearSoft.PingHost.Ping
             var serviceDisplayName =
                 ConfigurationManager.AppSettings["ServiceDisplayName"] ?? "SpearSoft.PingHost.Ping";
             var serviceDescription = ConfigurationManager.AppSettings["ServiceDescription"] ??
-                                     "Ping service for keeping SignalR connections to the HIE alive";
+                                     "Ping service for keeping websites alive";
             var serviceName = ConfigurationManager.AppSettings["ServiceName"] ?? "SpearSoft_PingHost_Ping";
             var pollingInterval = ConfigurationManager.AppSettings["PollingInterval"] ?? "900";
 
